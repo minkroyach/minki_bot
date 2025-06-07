@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 # Настройки
-OWNER_ID = int(os.getenv("OWNER_ID"))
+OWNER_ID = int(os.getenv("OWNER_ID", "1030243433"))  # 1030243433 - ваш ID
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # Логирование
