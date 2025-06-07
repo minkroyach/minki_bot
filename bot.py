@@ -4,8 +4,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 # Настройки
-OWNER_ID = int(os.getenv("OWNER_ID", "1030243433"))  # Ваш ID по умолчанию
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+OWNER_ID = 1030243433  # Жёстко прописываем ваш ID
+BOT_TOKEN = os.getenv("BOT_TOKEN", "ВАШ_НОВЫЙ_ТОКЕН")  # Токен по умолчанию
 
 # Логирование
 logging.basicConfig(
