@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 
 # Настройки
 OWNER_ID = 1030243433  # Жёстко прописываем ваш ID
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8043165621:AAEnOIxob-8xXkUZNKqJdFbqBEozjtFyMb4")  # Токен по умолчанию
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Только из переменных окружения
 
 # Логирование
 logging.basicConfig(
